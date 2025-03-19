@@ -7,16 +7,17 @@ It creates a `chroot` with bind mounts for `/sys`, `/dev`, `/proc`, and `/home` 
 
 ## Installation
 
-Copy the script to your project folder.
+Use `sudo bash sysenv.sh "$pathToEnv"` to initialize the environment.
 
 ## Usage
 
-    $ sudo bash activate.sh
-    (env)$ sudo apt-get install everything
-    (env)$ sudo make install
-    (env)$ echo "Hello world" > hello.txt
-    (env)$ ^D
-    $ everything
-    Command not found
-    $ cat hello.txt
-    Hello world
+    `$ cd "$pathToEnv"`
+    `$ sudo bash activate.sh` 
+    `(env)$ sudo apt-get install everything`
+    `(env)$ sudo make install`
+    `(env)$ echo "Hello world" > hello.txt`
+    `(env)$ ^D`
+    `$ everything`
+    `Command not found`
+    `$ cat hello.txt`
+    `Hello world`
